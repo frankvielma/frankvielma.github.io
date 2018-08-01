@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://fv.cruxaustralis.com.ve/sitemap.xml
