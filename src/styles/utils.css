@@ -1,0 +1,66 @@
+.linkedin {
+    line-height: 1em;
+    letter-spacing: 0em;
+    font-family: monospace;
+    display: block;
+    color: #95b3d8;
+    cursor: pointer;
+    width: 15rem;
+  }
+
+  .comming {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    text-align: center;
+  }
+  .icon {
+    width: 10rem;
+    max-width: 50%;
+    vertical-align: center;
+  }
+
+  main {
+    margin: auto;
+    padding: 1rem;
+    color: gray;
+    background-image: url(endless-constellation.svg);
+    height: 100vh;
+  }
+  .profile,
+  .skills,
+  .experience,
+  .education {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  .col-1 {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 2rem;
+  }
+
+  .col-2 {
+    flex-wrap: wrap;
+    ul {
+      list-style-type: circle;
+      padding-left: 0;
+    }
+  }
+
+  .title {
+    writing-mode: vertical-lr;
+  }
+
+  .centered-element {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
