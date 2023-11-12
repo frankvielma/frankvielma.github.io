@@ -15,11 +15,24 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="google-adsense-account" content="ca-pub-4919812855416510">
+    <meta name="google-adsense-account" content="ca-pub-4919812855416510" />
     <title>{title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M10PHB18ET"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M10PHB18ET");
+    </script>
   </head>
   <body>
-	<Header />
+    <Header />
     <slot />
   </body>
 </html>
@@ -27,7 +40,6 @@ const { title } = Astro.props;
   html {
     font-family: system-ui, sans-serif;
     background: #13151a;
-	color: white;
+    color: white;
   }
-  
 </style>
