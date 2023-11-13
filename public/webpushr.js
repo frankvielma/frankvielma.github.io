@@ -3,3 +3,7 @@
 fjs.parentNode.appendChild(js);}(window,document, 'script', 'webpushr-jssdk'));
 webpushr('setup',{'key':'BHGt_F0uAOcXIsE7VYxH2_MwAR0zx3ouW72aUVn79ANMjsMtxGQtCjqGmR4j9I3srL-uJoL75Cffm-UHCq3NOe0' });
 // end webpushr tracking code
+
+function _webpushrScriptReady(){
+    webpushr('attributes',{"email" : "name@example.com"});
+}
