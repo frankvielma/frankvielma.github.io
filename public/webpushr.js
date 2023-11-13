@@ -5,5 +5,5 @@ webpushr('setup',{'key':'BHGt_F0uAOcXIsE7VYxH2_MwAR0zx3ouW72aUVn79ANMjsMtxGQtCjq
 // end webpushr tracking code
 
 function _webpushrScriptReady(){
-    webpushr('attributes',{"email" : "name@example.com"});
+    webpushr('attributes',{"email" : "chrome_test@example.com"});
 }
