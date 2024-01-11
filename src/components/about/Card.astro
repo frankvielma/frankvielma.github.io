@@ -1,0 +1,35 @@
+---
+// Usage: <Card greeting="Howdy" name="Partner" />
+const {
+  class: className,
+  position,
+  company,
+  tasks,
+  skills,
+  dates,
+} = Astro.props;
+---
+
+<li class={className}>
+  <div class="border-line">
+    <div class="date-range">{dates}</div>
+  </div>
+  <div class="timeline-description">
+    <div class="w3-row">
+      <div class="w3-twothird">
+        <i class="icon-asterisk"></i>
+        <strong>{position}</strong>
+      </div>
+      <div class="w3-third a-right">
+        <a id="click2" title="Click me!"><i class="icon-cancel"></i></a>
+      </div>
+    </div>
+    <div id="job2">
+      <h6>{company}</h6>
+      <p>{tasks}</p>
+      <p class="about-skills">
+        {skills}
+      </p>
+    </div>
+  </div>
+</li>
