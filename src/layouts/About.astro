@@ -1,11 +1,4 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,22 +10,13 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="google-adsense-account" content="ca-pub-4919812855416510" />
-    <title>{title}</title>
+    <title>Frank Vielma - About</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M10PHB18ET"></script>
     <script is:inline src="/ga4.js"></script>
   </head>
   <body>
-    <Header />
     <slot />
-    <Footer />
   </body>
 </html>
-<style is:global>
-  html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-    color: white;
-  }
-</style>
