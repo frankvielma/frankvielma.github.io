@@ -1,0 +1,49 @@
+---
+import "../styles/utils.css";
+import "../styles/all.css";
+import Profile from "../components/about/Profile.astro";
+import Skills from "../components/about/Skills.astro";
+import Experience from "../components/about/Experience.astro";
+import Education from "../components/about/Education.astro";
+import Footer from "../components/about/Footer.astro";
+import Header from "../components/about/Header.astro";
+---
+
+<nav class="w3-sidenav w3-light-grey nav-width1">
+  <hr class="spv" />
+  <a class="w3-closenav w3-green" href="" id="close">Close X</a>
+  <a href="/"> <i class="icon-home"></i></a>
+  <a href="/about">About</a>
+</nav>
+
+<div id="main">
+  <Header />
+  <div class="w3-row breadcrumbs">
+    <div class="w3-col l10 m8 s8">
+      <a class="no-underline" href="/" title="home">
+        <i class="icon-home"></i>
+      </a>
+    </div>
+  </div>
+  <div class="w3-container w3-row-padding">
+    <div class="w3-col l11 m8">
+      <Profile />
+      <Skills />
+      <Experience />
+      <Education />
+      <a class="back-to-top display-none" href="#">
+        <i class="icon-up-circled"></i>
+      </a>
+    </div>
+    <div class="w3-col l1 m4">
+      <div id="country">
+        <div class="clock"></div>
+        <img src="src/images/flags/un.png" id="flag" alt="Un/" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline src="/all.js"></script>
+
+<Footer />
