@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/About.astro";
+import { Image } from 'astro:assets';
+import flagUn from "../images/un.png";
+
 import "../styles/utils.css";
 import "../styles/all.css";
 import Profile from "../components/about/Profile.astro";
@@ -40,7 +43,7 @@ import Header from "../components/about/Header.astro";
       <div class="w3-col l1 m4">
         <div id="country">
           <div class="clock"></div>
-          <img src="../src/images/flags/un.png" id="flag" alt="Un/" />
+          <Image src={flagUn} alt="A bird sitting on a nest of eggs."/>
         </div>
       </div>
     </div>

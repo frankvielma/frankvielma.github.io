@@ -1,15 +1,11 @@
 ---
-
+import { Image } from 'astro:assets';
+import logoCreative from '../../images/88x31.png';
 ---
 
 <footer class="w3-container w3-blue-grey">
   <div class="w3-col creative_logo" style="width:100px">
-    <img
-      alt="Creative Commons"
-      height="31"
-      src="../src/images/88x31.png"
-      width="88"
-    />
+    <Image src={logoCreative} alt="A bird sitting on a nest of eggs."/>
   </div>
   <div class="w3-rest">
     <p>
