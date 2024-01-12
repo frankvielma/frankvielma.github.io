@@ -209,7 +209,7 @@
 }
 
 .header_bg {
-    background: url("src/images/bg-header.png") repeat-x scroll 0 0 #000
+    background: url("../src/images/bg-header.png") repeat-x scroll 0 0 #000
 }
 
 .btn1 {
