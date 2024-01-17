@@ -9,27 +9,6 @@
     return "function" !== n && !re.isWindow(e) && ("array" === n || 0 === t || "number" == typeof t && t > 0 && t - 1 in e)
   }
 
-  function i(e, t, n) {
-    if (re.isFunction(t)) return re.grep(e, function (e, i) {
-      return !!t.call(e, i, e) !== n
-    });
-    if (t.nodeType) return re.grep(e, function (e) {
-      return e === t !== n
-    });
-    if ("string" == typeof t) {
-      if (fe.test(t)) return re.filter(t, e, n);
-      t = re.filter(t, e)
-    }
-    return re.grep(e, function (e) {
-      return Z.call(t, e) > -1 !== n
-    })
-  }
-
-  function o(e, t) {
-    for (; (e = e[t]) && 1 !== e.nodeType;) ;
-    return e
-  }
-
   function r(e) {
     var t = {};
     return re.each(e.match(ve) || [], function (e, n) {
@@ -78,32 +57,8 @@
     return void 0 === t || t && re.nodeName(e, t) ? re.merge([e], n) : n
   }
 
-  function h(e, t) {
-    for (var n = 0, i = e.length; i > n; n++) we.set(e[n], "globalEval", !t || we.get(t[n], "globalEval"))
-  }
-
-  function f(e, t, n, i, o) {
-    for (var r, s, a, l, u, f, d = t.createDocumentFragment(), p = [], m = 0, g = e.length; g > m; m++) if ((r = e[m]) || 0 === r) if ("object" === re.type(r)) re.merge(p, r.nodeType ? [r] : r); else if (je.test(r)) {
-      for (s = s || d.appendChild(t.createElement("div")), a = (Ae.exec(r) || ["", ""])[1].toLowerCase(), l = Ie[a] || Ie._default, s.innerHTML = l[1] + re.htmlPrefilter(r) + l[2], f = l[0]; f--;) s = s.lastChild;
-      re.merge(p, s.childNodes), s = d.firstChild, s.textContent = ""
-    } else p.push(t.createTextNode(r));
-    for (d.textContent = "", m = 0; r = p[m++];) if (i && re.inArray(r, i) > -1) o && o.push(r); else if (u = re.contains(r.ownerDocument, r), s = c(d.appendChild(r), "script"), u && h(s), n) for (f = 0; r = s[f++];) De.test(r.type || "") && n.push(r);
-    return d
-  }
-
-  function d() {
-    return !0
-  }
-
   function p() {
     return !1
-  }
-
-  function m() {
-    try {
-      return Q.activeElement
-    } catch (e) {
-    }
   }
 
   function g(e, t, n, i, o, r) {
