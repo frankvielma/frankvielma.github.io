@@ -6,3 +6,10 @@ import compressor from "astro-compressor";
 export default defineConfig({
   integrations: [compressor()]
 });
+
+{
+  build: {
+    // Example: Generate `page.html` instead of `page/index.html` during build.
+    format: 'file'
+  }
+}
