@@ -302,25 +302,6 @@
     return i && re.extend(!0, e, i), e
   }
 
-  function B(e, t, n) {
-    for (var i, o, r, s, a = e.contents, l = e.dataTypes; "*" === l[0];) l.shift(), void 0 === i && (i = e.mimeType || t.getResponseHeader("Content-Type"));
-    if (i) for (o in a) if (a[o] && a[o].test(i)) {
-      l.unshift(o);
-      break
-    }
-    if (l[0] in n) r = l[0]; else {
-      for (o in n) {
-        if (!l[0] || e.converters[o + " " + l[0]]) {
-          r = o;
-          break
-        }
-        s || (s = o)
-      }
-      r = r || s
-    }
-    return r ? (r !== l[0] && l.unshift(r), n[r]) : void 0
-  }
-
   function U(e, t, n, i) {
     var o, r, s, a, l, u = {}, c = e.dataTypes.slice();
     if (c[1]) for (s in e.converters) u[s.toLowerCase()] = e.converters[s];
