@@ -477,35 +477,6 @@ hr.d1 {
     border-color: #e6e5e2
 }
 
-.about-skills {
-    font-style: italic;
-    background-color: #E4E4E4
-}
-
-#skill_tags {
-    line-height: 11px;
-    background-color: #F3F2F2
-}
-
-#skill_tags a {
-    font-size: 10px;
-    font-style: italic
-}
-
-#skill_tags a:link {
-    color: gray;
-    text-decoration: none
-}
-
-#skill_tags a:hover {
-    color: #4fa42b;
-    text-decoration: underline
-}
-
-#skill_tags a:active {
-    color: yellow
-}
-
 .progressBar {
     width: 100%;
     border-radius: 10px;
