@@ -103,6 +103,7 @@
   padding-left: 10px;
   padding-bottom: 10px;
   border-color: #e6e5e2;
+  align-content: center;
 }
 
 .skill-bars {
@@ -261,20 +262,17 @@
   background-color: #ccc;
   height: 1px;
   left: 50%;
-  margin-left: -8%;
   position: absolute;
-  text-align: center;
   top: 50%;
-  width: 52px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .timeline-both-side li.opposite-side .border-line {
   left: auto;
+  top: 50%;
   right: 50%;
   margin-left: 0;
-  margin-right: -8%;
-  width: 93px;
+  width: 85px;
 }
 
 .timeline-both-side li .border-line:before {
@@ -313,7 +311,11 @@
 .date-range {
     margin-top: 5px;
     font-size: 8px;
-    background-color: #fef0d1
+    background-color: #fef0d1;
+    width: 5rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1px;
 }
 
 
