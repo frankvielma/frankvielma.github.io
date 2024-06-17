@@ -29,12 +29,12 @@ progressBars.forEach(progressBar => {
 
 // Border line resizing
 const resizeBorderLines = () => {
-  const profileWidth = profile.offsetWidth;
+  const profileWidth = document.querySelector('li.opposite-side').offsetWidth;
   borderLines.forEach(borderLine => {
     if (borderLine.closest("li").classList.contains("opposite-side")) {
-      borderLine.style.width = `${profileWidth / 13 + 12}px`;
+      borderLine.style.width = `${profileWidth / 11 + 8}px`;
     } else {
-      borderLine.style.width = `${profileWidth / 13 - 30}px`;
+      borderLine.style.width = `${profileWidth / 11 - 35}px`;
     }
   });
 };
