@@ -33,8 +33,8 @@
 }
 
 .creative_logo {
-  padding-top: 20px;
-  width: 100px;
+  padding-top: 1.25rem;
+  width: 6.25rem;
 }
 
 .header_bg {
@@ -104,6 +104,7 @@
   padding-bottom: 10px;
   border-color: #e6e5e2;
   align-content: center;
+  margin-right: 0.2rem;
 }
 
 .skill-bars {
@@ -311,11 +312,11 @@
 
 .date-range {
   margin-top: 5px;
-  font-size: 8px;
+  margin-left: 0.4rem;
+  font-size: 0.6rem;
   background-color: #fef0d1;
   text-align: center;
   width: 100%;
-  border-radius: 0.5rem;
 }
 
 .date-range-mobile {
@@ -358,7 +359,7 @@ body {
 html,
 body {
   font-family: Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -366,20 +367,26 @@ html {
   overflow-x: hidden;
 }
 
+.ruler-mobile {
+  display: none;
+}
 
-@media only screen and (width < 600px) {
-  .timeline-both-side li .border-line, .timeline-both-side::after, .timeline-both-side::before {
+@media screen and (max-width: 700px) {
+  .ruler, .timeline-both-side li .border-line, .timeline-both-side::after, .timeline-both-side::before {
     display: none;
   }
 
   .date-range-mobile {
     display: block;
     margin-top: 5px;
-    font-size: 8px;
+    font-size: 0.7rem;
     background-color: #fef0d1;
     text-align: center;
     width: 100%;
-    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: rgb(73, 72, 77);
   }
 
   .timeline-both-side li.opposite-side .timeline-description {
@@ -392,6 +399,42 @@ html {
     margin-top: 1rem;
     float: left;
     width: 80%;
+  }
+
+  .ruler-mobile,
+  .ruler-mobile li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .ruler-mobile {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    color: #ccc;
+    white-space: nowrap;
+  }
+  
+  .ruler-mobile li {
+    border-left: 2px solid #ccc;
+    width: 12%;
+    float: left;
+    font-size: 10px;
+    color: #2d2c1c;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .profile-desc {
+    font-size: 0.9rem;
+    margin-right: 0.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
 
