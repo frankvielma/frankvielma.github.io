@@ -308,14 +308,18 @@
 .display-none {
   display: none;
 }
+
 .date-range {
-    margin-top: 5px;
-    font-size: 8px;
-    background-color: #fef0d1;
-    width: 5rem;
-    text-align: center;
-    border-radius: 1rem;
-    padding: 1px;
+  margin-top: 5px;
+  font-size: 8px;
+  background-color: #fef0d1;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.date-range-mobile {
+  display: none;
 }
 
 
@@ -363,7 +367,31 @@ html {
 }
 
 
-@media only screen and (width <= 600px) {
+@media only screen and (width < 600px) {
+  .timeline-both-side li .border-line, .timeline-both-side::after, .timeline-both-side::before {
+    display: none;
+  }
 
+  .date-range-mobile {
+    display: block;
+    margin-top: 5px;
+    font-size: 8px;
+    background-color: #fef0d1;
+    text-align: center;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .timeline-both-side li.opposite-side .timeline-description {
+    margin-top: 1rem;
+    float: left;
+    width: 80%;
+  }
+
+  .timeline-both-side li .timeline-description {
+    margin-top: 1rem;
+    float: left;
+    width: 80%;
+  }
 }
 

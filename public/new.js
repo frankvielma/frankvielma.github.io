@@ -30,7 +30,6 @@ progressBars.forEach(progressBar => {
 // Border line resizing
 const resizeBorderLines = () => {
   const profileWidth = document.querySelector('li.opposite-side').offsetWidth;
-  console.log(profileWidth);
   borderLines.forEach(borderLine => {
     if (borderLine.closest("li").classList.contains("opposite-side")) {
       borderLine.style.marginRight = `${(149.9554 - profileWidth)/11.33047}px`;
