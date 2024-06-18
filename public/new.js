@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const quoteCount = quotes.length;
   const randomIndex = Math.floor(Math.random() * quoteCount);
-  const quoteElement = document.getElementById("quote");
+  const quoteElement = document.querySelector('.quote');
   quoteElement.textContent = quotes[randomIndex];
 });
 

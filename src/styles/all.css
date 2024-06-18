@@ -1,37 +1,38 @@
+/* General Styles */
+html {
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Container */
 .container {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
 
+/* Colors and Fonts */
 .blue-grey {
-  color: #fff;
   background-color: #607d8b;
+  color: #fff;
 }
 
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "system";
-  font-style: normal;
-  font-weight: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: 0.2em;
-}
-
-#quote {
+.quote {
   color: #ffa700;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
   font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
+/* Header */
 .creative_logo {
   padding-top: 1.25rem;
   width: 6.25rem;
@@ -41,47 +42,43 @@
   background: url("/bg-header.png") repeat-x scroll 0 0 #000;
 }
 
+/* Back to Top Button */
 .back-to-top {
-  background: none;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-  display: none;
-  text-decoration: none;
-  color: #ffffff;
   background-color: #ff9000;
-  width: 4rem;
-  padding-top: 0.5rem;
-  text-align: center;
   border-radius: 1rem;
+  bottom: 0;
+  color: #ffffff;
+  display: none;
+  padding-top: 0.5rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 4rem;
+  z-index: 10;
 }
 
 .back-to-top i {
-  font-size: 40px;
-  margin: 0px;
+  font-size: 40rem;
+  margin: 0;
 }
 
+/* Social Media Icons */
 .social {
-  font-size: 22px;
   color: #7e328c;
-}
-
-.social i {
-  border-bottom: solid 2px;
-  display: inline;
-  border-radius: 7px;
+  font-size: 1.4rem;
 }
 
 .social a:hover {
-  cursor: hand;
+  cursor: pointer;
 }
 
+/* First Column Styling */
 .first-col {
   display: flex;
   flex-direction: row;
-  width: 5rem;
   margin: 1rem 1rem 3rem 0;
+  width: 5rem;
 }
 
 .about-ico-text {
@@ -89,146 +86,76 @@
   transform-origin: 1rem 1rem;
 }
 
-.experience, .education, .profile, .skills {
+/* Section Styling (Experience, Education, Profile, Skills) */
+.experience, 
+.education, 
+.profile, 
+.skills {
+  border-bottom: 0.125rem dashed #e6e5e2;
   display: flex;
   flex-direction: row;
-  border-bottom-style: dashed;
-  border-width: 2px;
-  border-color: #e6e5e2;
 }
 
-.experience-desc, .profile-desc, .education-desc {
-  border-left-style: dashed;
-  border-width: 2px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  border-color: #e6e5e2;
+.experience-desc, 
+.profile-desc, 
+.education-desc {
   align-content: center;
+  border-left: 0.125rem dashed #e6e5e2;
   margin-right: 0.2rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.6rem;
 }
 
+/* Skill Bars Styling */
 .skill-bars {
-  border-left-style: dashed;
-  border-width: 2px;
+  border-left: 2px dashed #e6e5e2;
   padding: 0.5rem 2rem 0.5rem 0.5rem;
-  border-color: #e6e5e2;
   width: 100%;
 }
 
 .progressBar {
-  width: 100%;
-  border-radius: 10px;
   background: #e6e5e2;
+  border-radius: 10px;
   box-shadow: 0 -1px 1px #c0bfbc inset;
-  text-align: center;
-  font-size: 10px;
-  margin-bottom: 5px;
   display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
 }
 
-#postgresql div {
+/* Skill Progress Bars (with gradients) */
+#postgresql div, 
+#mysql div, 
+#ror div, 
+#php div, 
+#git div, 
+#nextjs div {
+  background-color: #3dc1ff;
   border-radius: 9px;
   box-shadow: 0 2px 2px #333;
-  background-color: #3dc1ff;
-  background: -webkit-linear-gradient(top, #37beff, #2660a3);
-  background: -webkit-gradient(
-    linear,
-    0% 0%,
-    0% 100%,
-    from(#37beff),
-    to(#2660a3)
-  );
-  background: -moz-linear-gradient(top, #37beff, #2660a3);
-  background: -ms-linear-gradient(top, #37beff, #2660a3);
-  background: -o-linear-gradient(top, #37beff, #2660a3);
   float: left;
   margin-left: 20px;
 }
 
-#mysql div {
-  border-radius: 9px;
-  box-shadow: 0 2px 2px #333;
-  background-color: #3dc1ff;
-  background: -webkit-linear-gradient(top, #baffb7, #588d47);
-  background: -webkit-gradient(
-    linear,
-    0% 0%,
-    0% 100%,
-    from(#baffb7),
-    to(#588d47)
-  );
-  background: -moz-linear-gradient(top, #baffb7, #588d47);
-  background: -ms-linear-gradient(top, #baffb7, #588d47);
-  background: -o-linear-gradient(top, #baffb7, #588d47);
-  float: left;
-  margin-left: 20px;
-}
+/* Gradient Styles (Refactored) */
+/* Apply these gradients to the specific skill bars: */
+#postgresql div { background: linear-gradient(to bottom, #37beff, #2660a3); }
+#mysql div     { background: linear-gradient(to bottom, #baffb7, #588d47); }
+#ror div       { background: linear-gradient(to bottom, #fbbea1, #a31616); }
+#php div       { background: linear-gradient(to bottom, #fff546, #ff7615); }
+#git div       { background: linear-gradient(to bottom, #fff8f8, #7a19a3); }
+#nextjs div    { background: linear-gradient(to bottom, #e1ff37, #4b5709); }
 
-#ror div {
-  border-radius: 9px;
-  box-shadow: 0 2px 2px #333;
-  background-color: #3dc1ff;
-  background: -webkit-linear-gradient(top, #fbbea1, #a31616);
-  background: -webkit-gradient(
-    linear,
-    0% 0%,
-    0% 100%,
-    from(#fbbea1),
-    to(#a31616)
-  );
-  background: -moz-linear-gradient(top, #fbbea1, #a31616);
-  background: -ms-linear-gradient(top, #fbbea1, #a31616);
-  background: -o-linear-gradient(top, #fbbea1, #a31616);
-  float: left;
-  margin-left: 20px;
-}
-
-#php div {
-  border-radius: 9px;
-  box-shadow: 0 2px 2px #333;
-  background-color: #3dc1ff;
-  background: -webkit-linear-gradient(top, #fff546, #ff7615);
-  background: -webkit-gradient(
-    linear,
-    0% 0%,
-    0% 100%,
-    from(#fff546),
-    to(#ff7615)
-  );
-  background: -moz-linear-gradient(top, #fff546, #ff7615);
-  background: -ms-linear-gradient(top, #fff546, #ff7615);
-  background: -o-linear-gradient(top, #fff546, #ff7615);
-  float: left;
-  margin-left: 20px;
-}
-
-#git div {
-  border-radius: 9px;
-  box-shadow: 0 2px 2px #333;
-  background-color: #3dc1ff;
-  background: -webkit-linear-gradient(top, #fff8f8, #7a19a3);
-  background: -webkit-gradient(
-    linear,
-    0% 0%,
-    0% 100%,
-    from(#fff8f8),
-    to(#7a19a3)
-  );
-  background: -moz-linear-gradient(top, #fff8f8, #7a19a3);
-  background: -ms-linear-gradient(top, #fff8f8, #7a19a3);
-  background: -o-linear-gradient(top, #fff8f8, #7a19a3);
-  float: left;
-  margin-left: 20px;
-}
-
+/* Timeline Styling */
 .timeline-both-side {
+  box-sizing: border-box;
   float: left;
-  width: 96%;
+  font-size: 10px;
+  list-style-type: none;
   margin: 20px 2% 50px;
   position: relative;
-  box-sizing: border-box;
-  list-style-type: none;
-  font-size: 10px;
+  width: 96%;
 }
 
 .timeline-both-side:before {
@@ -243,6 +170,7 @@
 
 .timeline-both-side:after {
   border-radius: 50%;
+  border: 2px solid #ccc;
   bottom: -22px;
   content: "";
   height: 18px;
@@ -250,12 +178,11 @@
   margin-left: -11px;
   position: absolute;
   width: 18px;
-  border: 2px solid #ccc;
 }
 
 .timeline-both-side li {
-  position: relative;
   float: left;
+  position: relative;
   width: 100%;
 }
 
@@ -265,15 +192,13 @@
   left: 50%;
   position: absolute;
   top: 50%;
+  width: 85px; /* Adjusted width for better visibility */
   z-index: 10;
 }
 
 .timeline-both-side li.opposite-side .border-line {
   left: auto;
-  top: 50%;
   right: 50%;
-  margin-left: 0;
-  width: 85px;
 }
 
 .timeline-both-side li .border-line:before {
@@ -292,8 +217,8 @@
 }
 
 .timeline-both-side li .timeline-description {
-  border-radius: 2px;
   background-color: #f1f1f1;
+  border-radius: 2px;
   border: 1px solid #ccc;
   float: left;
   font-size: 13px;
@@ -310,120 +235,103 @@
   display: none;
 }
 
+/* Date Range Styling */
 .date-range {
-  margin-top: 5px;
-  margin-left: 0.4rem;
-  font-size: 0.6rem;
   background-color: #fef0d1;
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
+  margin-top: 5px;
   text-align: center;
   width: 100%;
 }
 
 .date-range-mobile {
+  background-color: #fef0d1;
+  color: rgb(73, 72, 77);
   display: none;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 5px;
+  padding-top: 0.5rem;
+  text-align: center;
+  width: 100%;
 }
 
-
+/* Ruler Styling */
 .ruler,
 .ruler li {
+  display: inline-block;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
-  display: inline-block;
 }
 
 .ruler {
-  width: 100%;
   border-bottom: 2px solid #ccc;
   color: #ccc;
   white-space: nowrap;
+  width: 100%;
 }
 
 .ruler li {
   border-left: 2px solid #ccc;
-  width: 7%;
+  color: #2d2c1c;
   float: left;
   font-size: 10px;
-  color: #2d2c1c;
+  width: 7%;
 }
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
+/* Ruler for Mobile */
+.ruler-mobile,
+.ruler-mobile li {
+  display: inline-block;
+  list-style: none;
   margin: 0;
-}
-
-html,
-body {
-  font-family: Verdana, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-html {
-  overflow-x: hidden;
+  padding: 0;
 }
 
 .ruler-mobile {
-  display: none;
+  border-bottom: 2px solid #ccc;
+  color: #ccc;
+  white-space: nowrap;
+  width: 100%;
 }
 
+.ruler-mobile li {
+  border-left: 2px solid #ccc;
+  color: #2d2c1c;
+  float: left;
+  font-size: 10px;
+  width: 12%;
+}
+
+/* Responsive Styling */
 @media screen and (max-width: 700px) {
+  /* Hide Ruler and Timeline Elements */
   .ruler, .timeline-both-side li .border-line, .timeline-both-side::after, .timeline-both-side::before {
     display: none;
   }
 
+  /* Show Mobile Date Range */
   .date-range-mobile {
     display: block;
-    margin-top: 5px;
-    font-size: 0.7rem;
-    background-color: #fef0d1;
-    text-align: center;
-    width: 100%;
-    padding-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: rgb(73, 72, 77);
   }
 
-  .timeline-both-side li.opposite-side .timeline-description {
-    margin-top: 1rem;
-    float: left;
-    width: 80%;
-  }
-
+  /* Adjust Timeline Description for Mobile */
+  .timeline-both-side li.opposite-side .timeline-description, 
   .timeline-both-side li .timeline-description {
-    margin-top: 1rem;
     float: left;
-    width: 80%;
+    margin-top: 1rem;
+    width: 90%;
   }
 
-  .ruler-mobile,
-  .ruler-mobile li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  /* Show Mobile Ruler */
+  .ruler-mobile {
     display: inline-block;
   }
-  
-  .ruler-mobile {
-    width: 100%;
-    border-bottom: 2px solid #ccc;
-    color: #ccc;
-    white-space: nowrap;
-  }
-  
-  .ruler-mobile li {
-    border-left: 2px solid #ccc;
-    width: 12%;
-    float: left;
-    font-size: 10px;
-    color: #2d2c1c;
-  }
 
+  /* Other Responsive Adjustments */
   h1 {
     font-size: 1.2rem;
   }
@@ -436,5 +344,31 @@ html {
   footer {
     font-size: 0.8rem;
   }
-}
 
+  .first-col {
+    width: 4rem;
+  }
+
+  .experience-desc {
+    padding: 0;
+  }
+
+  .timeline-both-side {
+    margin: 0;
+    width: 90%;
+  }
+
+  .skill-bars {
+    line-height: 1;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .progressBar {
+    font-size: 0.5rem;
+  }
+
+  .quote {
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+  }
+}
