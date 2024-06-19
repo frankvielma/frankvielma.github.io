@@ -16,13 +16,23 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
 }
 
 /* Colors and Fonts */
-.blue-grey {
+.footer {
   background-color: #607d8b;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.header {
+  background: url("/bg-header.png") repeat-x scroll 0 0 #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
 }
 
 .quote {
@@ -36,10 +46,6 @@ body {
 .creative_logo {
   padding-top: 1.25rem;
   width: 6.25rem;
-}
-
-.header_bg {
-  background: url("/bg-header.png") repeat-x scroll 0 0 #000;
 }
 
 /* Back to Top Button */
@@ -94,6 +100,7 @@ body {
   border-bottom: 0.125rem dashed #e6e5e2;
   display: flex;
   flex-direction: row;
+  padding-left: 1rem;
 }
 
 .experience-desc, 
