@@ -14,24 +14,99 @@ Tags
 </svg> </a> </div> </div> </header>  <div class="flex items-baseline"> <div class="p-8 prose dark:prose-invert
   prose-h1:font-bold prose-h1:text-xl
   prose-a:text-blue-600 prose-img:rounded-xl
-  prose-headings:underline max-w-none md:w-5/6"> <p><img src="/images/ruby_history.webp" alt="A Brief History of Ruby" title="A Brief History of Ruby"></p>
-<h1 id="a-brief-history-of-ruby">A Brief History of Ruby</h1>
-<p><em>Published on: 2024-08-09</em></p>
-<p>Ruby’s story is a fascinating chronicle of evolution, community, and the profound impact of a visionary creator. Born in Japan in 1993, <a href="https://en.wikipedia.org/wiki/Yukihiro_Matsumoto" target="_blank">Yukihiro “Matz” Matsumoto</a> envisioned a language that was both powerful and enjoyable to work with. Inspired by Smalltalk and Perl, Matz sought to create a programming language that prioritizing programmer happiness and productivity.</p>
-<p>Initially released in 1993, <a href="https://www.ruby-lang.org/" target="_blank">Ruby</a> quickly garnered a dedicated following in Japan, thanks to its free and open-source nature. Ruby was still in its infancy when Ruby 1.0 was released in December 1996. This was quickly followed by Ruby 1.1 in August 1997 and the first stable version, Ruby 1.2, in December 1998. While Ruby had a dedicated following in Japan at this time, it was yet to gain significant traction outside of the country. It is still possible to download the infant version of Ruby <a href="https://ftp.ruby-lang.org/pub/ruby/1.0/" target="_blank">here</a>.</p>
-<p>However, it wasn’t until the emergence of <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a> in 2004 that Ruby truly gained global recognition. <a href="https://en.wikipedia.org/wiki/David_Heinemeier_Hansson">David Heinemeier Hansson</a>, frustrated with the limitations of existing web development tools, created Rails, a framework that offered a rapid development environment, revolutionizing the way web applications were built.</p>
-<p>The widespread adoption of Ruby on Rails ignited a surge of developers and enthusiasts in the Ruby community. Open-source libraries, known as “gems,” began flourishing, expanding Ruby’s capabilities and simplifying web development. Ruby’s versatility soon extended beyond web development, finding applications in data analysis, automation, scripting, and game development.</p>
-<p>Throughout its evolution, Ruby has consistently adapted to the changing technological landscape, receiving regular updates and new features. Its emphasis on readability, expressiveness, and a welcoming community has made it a beloved language for millions of developers worldwide.</p>
-<p><img src="/images/image-1a.webp" alt="A Brief History of Ruby" title="A Brief History of Ruby"></p>
-<p><strong>Key Takeaways from Ruby’s History:</strong></p>
+  prose-headings:underline max-w-none md:w-5/6"> <p><img src="/images/timet.webp" alt="Timet" title="Timet"></p>
+<h2 id="timet-a-powerful-command-line-tool-for-tracking-your-time">Timet: A Powerful Command Line Tool for Tracking Your Time</h2>
+<p>Timet is a Ruby-based command-line tool designed for professionals to track time spent on multiple tasks. It offers a simple, efficient interface to start, stop, and manage time tracking, with data stored locally using SQLite. Timet helps improve productivity and billing accuracy by providing detailed reports and summaries for tracked tasks, making it ideal for developers, freelancers, and project managers seeking an easy-to-use time management solution.</p>
+<h3 id="why-timet">Why Timet?</h3>
+<p><strong>Timet</strong> is designed to track the time you spend on various tasks locally, without relying on external databases or cloud storage. It uses <strong>SQLite</strong> to store the time tracking data, ensuring that your data remains secure and private. With Timet, you get:</p>
+<p><strong>Key Features:</strong></p>
 <ul>
-<li><strong>Programmer Happiness First:</strong> Ruby was designed with the developer’s experience in mind, prioritizing readability, expressiveness, and joy in coding.</li>
-<li><strong>Open Source Innovation:</strong> Ruby’s open-source nature fostered a thriving community and the creation of a vast ecosystem of tools and libraries.</li>
-<li><strong>Versatility Beyond Web Development:</strong> Ruby has proven its adaptability in various domains, demonstrating its versatility and power.</li>
-<li><strong>The Impact of a Visionary:</strong> Matz’s passion and dedication to creating a language that prioritized developer happiness have had a lasting impact on the tech world.</li>
+<li><strong>Local Data Storage:</strong> Timet utilizes SQLite to store your time tracking data locally, ensuring privacy and security.</li>
+<li><strong>Lightweight and Fast:</strong> Its efficient design and local data storage make Timet a speedy and responsive tool.</li>
+<li><strong>Structured Data:</strong> SQLite ensures your data is organized and easily accessible.</li>
+<li><strong>Scalability:</strong> Timet can handle growing time tracking needs.</li>
+<li><strong>Data Integrity:</strong> SQLite maintains the accuracy and consistency of your data.</li>
+<li><strong>Querying and Reporting:</strong> Generate detailed reports for specific periods.</li>
+<li><strong>CSV Export:</strong> Easily export your time tracking data to CSV format for further analysis or sharing.</li>
 </ul>
-<p><img src="/images/image-2a.webp" alt="A Brief History of Ruby" title="A Brief History of Ruby"></p>
-<p>Ruby’s journey is a testament to the power of community, innovation, and a developer’s unwavering commitment to creating something beautiful and useful. It’s a language that continues to evolve and inspire, leaving an enduring mark on the world of software development.</p> </div> <div class="hidden md:block md:1/6"> <span class="font-bold dark:text-white">Latest Article</span> <article class="flex flex-col p-2 shadow-sm rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"> <a href="/posts/timet-a-powerful-command-line-tool-for-tracking-your-time" class="flex gap-4 sm:items-start"> <img src="/images/timet.webp" alt="Timet" class="object-cover w-12 h-12 rounded-full bg-gray-200 overflow-hidden" loading="eager" width="1" height="1" decoding="async"> <div class="flex flex-col w-2/3"> <span> Timet </span> <div class="flex justify-between text-sm text-slate-500"> <div class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="text-primary-600">
+<h3 id="getting-started-with-timet">Getting Started with Timet</h3>
+<p>Timet requires Ruby version 3.0.0 or greater and sqlite3 version 1.7 or above to function properly. There are alternative installations for older Ruby and Sqlite versions as well.</p>
+<h4 id="installation">Installation</h4>
+<p>You can install Timet directly using the gem command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">gem</span><span style="color:#9ECBFF"> install</span><span style="color:#9ECBFF"> timet</span></span>
+<span class="line"></span></code></pre>
+<h3 id="using-timet">Using Timet</h3>
+<p>Timet offers a straightforward command-line interface for tracking your time. Here’s a breakdown of some essential commands:</p>
+<ul>
+<li>
+<p><strong>Start Tracking Time:</strong></p>
+<p>Use the <code>timet start [tag]</code> command to begin tracking time for a specific task.</p>
+<p>For instance, to start tracking time for a task named “task1”, you would run:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span></span>
+<span class="line"></span></code></pre>
+</li>
+<li>
+<p><strong>Stop Tracking Time:</strong></p>
+<p>To stop tracking the current task and record the elapsed time, use the <code>timet stop</code> command. This will also display a report summarizing the total time spent on all tasks.</p>
+</li>
+<li>
+<p><strong>Resume Tracking:</strong></p>
+<p>If you need to pause your work and then pick up where you left off, the <code>timet resume</code> command allows you to resume tracking a previously stopped task.</p>
+</li>
+<li>
+<p><strong>View Time Reports:</strong></p>
+<p>Timet offers various options for generating time reports:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><strong>timet su t</strong></td><td>Get a report of tracked time for the current day.</td></tr><tr><td><strong>timet su y</strong></td><td>View a report of tracked time for yesterday.</td></tr><tr><td><strong>timet su w</strong></td><td>See a report of tracked time for the entire week.</td></tr><tr><td><strong>timet su r</strong></td><td>Resume tracking the last task you were working on.</td></tr><tr><td><strong>timet su m</strong></td><td>View a report for the previous month.</td></tr></tbody></table>
+</li>
+<li>
+<p><strong>Export Time Reports to CSV:</strong></p>
+<p>The summary command has the option to export your time data to a CSV file by specifying the —csv flag. For example:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">$</span><span style="color:#9ECBFF"> timet</span><span style="color:#9ECBFF"> su</span><span style="color:#9ECBFF"> today</span><span style="color:#79B8FF"> --csv=summary_today.csv</span></span>
+<span class="line"></span></code></pre>
+<p>This will create a CSV file (summary_today.csv) containing all tracked tasks for the current day, making it easy to share or import into other tools. You can use this flag with any of the summary filters (t, y, w, m).</p>
+<p>When exporting to CSV, timestamps for start and end times are converted to a readable date format (YYYY-MM-DD HH:MM:SS), ensuring compatibility with software like Excel or LibreOffice.</p>
+</li>
+<li>
+<p><strong>Delete Tasks:</strong></p>
+<p>The <code>timet d [id]</code> command allows you to remove unwanted tasks. You can find the task ID from the time reports generated using the summary commands.</p>
+</li>
+<li>
+<p><strong>Cancel Tracking:</strong></p>
+<p>Use <code>timet c</code> to stop any active time tracking.</p>
+</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>Timet is a minimalistic tool for time tracking that offers all the necessary features without unnecessary complexity. It empowers developers and professionals to track their tasks with accuracy, all while keeping data secure and local. By leveraging SQLite, it ensures fast data queries, integrity, and a scalable structure, making it a robust solution for time tracking.</p>
+<p>If you’re someone who values privacy, control, and ease of use in time tracking, Timet is the perfect companion for your workflow. Give it a try today and take back control of your time!</p> </div> <div class="hidden md:block md:1/6"> <span class="font-bold dark:text-white">Latest Article</span> <article class="flex flex-col p-2 shadow-sm rounded-lg hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"> <a href="/posts/timet-a-powerful-command-line-tool-for-tracking-your-time" class="flex gap-4 sm:items-start"> <img src="/images/timet.webp" alt="Timet" class="object-cover w-12 h-12 rounded-full bg-gray-200 overflow-hidden" loading="eager" width="1" height="1" decoding="async"> <div class="flex flex-col w-2/3"> <span> Timet </span> <div class="flex justify-between text-sm text-slate-500"> <div class="flex items-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="text-primary-600">
   <path fill="currentColor"
     d="M12 12h5v5h-5zm7-9h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 2v2H5V5zM5 19V9h14v10z">
   </path>
