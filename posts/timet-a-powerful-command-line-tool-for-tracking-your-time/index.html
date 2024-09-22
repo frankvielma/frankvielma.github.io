@@ -90,7 +90,7 @@ Tags
 <li>
 <p><strong>Export Time Reports to CSV:</strong></p>
 <p>The summary command has the option to export your time data to a CSV file by specifying the —csv flag. For example:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">$</span><span style="color:#9ECBFF"> timet</span><span style="color:#9ECBFF"> su</span><span style="color:#9ECBFF"> today</span><span style="color:#79B8FF"> --csv=summary_today.csv</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> su</span><span style="color:#9ECBFF"> t</span><span style="color:#79B8FF"> --csv=file.csv</span></span>
 <span class="line"></span></code></pre>
 <p>This will create a CSV file (summary_today.csv) containing all tracked tasks for the current day, making it easy to share or import into other tools. You can use this flag with any of the summary filters (t, y, w, m).</p>
 <p>When exporting to CSV, timestamps for start and end times are converted to a readable date format (YYYY-MM-DD HH:MM:SS), ensuring compatibility with software like Excel or LibreOffice.</p>
