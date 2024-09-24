@@ -16,7 +16,7 @@ Tags
   prose-a:text-blue-600 prose-img:rounded-xl
   prose-headings:underline max-w-none md:w-5/6"> <p><img src="/images/timet.webp" alt="Timet" title="Timet"></p>
 <h2 id="timet-a-powerful-command-line-tool-for-tracking-your-time">Timet: A Powerful Command Line Tool for Tracking Your Time</h2>
-<p>Timet is a Ruby-based command-line tool designed for professionals to track time spent on multiple tasks. It offers a simple, efficient interface to start, stop, and manage time tracking, with data stored locally using SQLite. Timet helps improve productivity and billing accuracy by providing detailed reports and summaries for tracked tasks, making it ideal for developers, freelancers, and project managers seeking an easy-to-use time management solution.</p>
+<p><a href="https://github.com/frankvielma/timet">Timet</a> is a Ruby-based command-line tool designed for professionals to track time spent on multiple tasks. It offers a simple, efficient interface to start, stop, and manage time tracking, with data stored locally using SQLite. Timet helps improve productivity and billing accuracy by providing detailed reports and summaries for tracked tasks, making it ideal for developers, freelancers, and project managers seeking an easy-to-use time management solution.</p>
 <h3 id="why-timet">Why Timet?</h3>
 <p><strong>Timet</strong> is designed to track the time you spend on various tasks locally, without relying on external databases or cloud storage. It uses <strong>SQLite</strong> to store the time tracking data, ensuring that your data remains secure and private. With Timet, you get:</p>
 <p><strong>Key Features:</strong></p>
@@ -40,9 +40,9 @@ Tags
 <ul>
 <li>
 <p><strong>Start Tracking Time:</strong></p>
-<p>Use the <code>timet start [tag]</code> command to begin tracking time for a specific task.</p>
+<p>Use the <code>timet start task1 --notes='Meeting with client'</code> command to begin tracking time for a specific task using a note (optional).</p>
 <p>For instance, to start tracking time for a task named “task1”, you would run:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span><span style="color:#79B8FF"> --notes=</span><span style="color:#9ECBFF">'Meeting with client'</span></span>
 <span class="line"></span></code></pre>
 </li>
 <li>
