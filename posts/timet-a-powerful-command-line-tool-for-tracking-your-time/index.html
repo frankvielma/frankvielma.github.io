@@ -16,9 +16,9 @@ Tags
   prose-a:text-blue-600 prose-img:rounded-xl
   prose-headings:underline max-w-none md:w-5/6 dark:bg-slate-800"> <p><img src="/images/timet.webp" alt="Timet" title="Timet"></p>
 <h2 id="timet-a-powerful-command-line-tool-for-tracking-your-time">Timet: A Powerful Command Line Tool for Tracking Your Time</h2>
-<p><em>Updated on: 2024-10-03</em></p>
+<p><em>Updated on: 2024-10-07</em></p>
 <p><a href="https://github.com/frankvielma/timet"><img src="https://badge.fury.io/rb/timet.svg" alt="Gem Version"></a></p>
-<p>Timet is a Ruby-based command-line time tracking tool designed to help you effortlessly track your work hours and monitor your productivity directly from your terminal. With Timet, you can log the time spent on various tasks and projects using simple text commands, making it ideal for users who prefer a lightweight and efficient solution without the need for a graphical interface.</p>
+<p><a href="https://github.com/frankvielma/timet/">Timet</a> is a Ruby-based command-line time tracking tool designed to help you effortlessly track your work hours and monitor your productivity directly from your terminal. With Timet, you can log the time spent on various tasks and projects using simple text commands, making it ideal for users who prefer a lightweight and efficient solution without the need for a graphical interface.</p>
 <p>Utilizing SQLite for local data storage, Timet ensures that your time tracking data is stored securely on your device. This approach eliminates the need for external databases or cloud storage, offering a fast, lightweight, and privacy-focused solution. Whether you’re curious about how you allocate your time or need a reliable tool for managing your work hours, Timet provides a straightforward and effective way to keep track of your activities.</p>
 <h3 id="why-timet">Why Timet?</h3>
 <p><strong>Timet</strong> is designed to track the time you spend on various tasks locally, without relying on external databases or cloud storage. It uses <strong>SQLite</strong> to store the time tracking data, ensuring that your data remains secure and private. With Timet, you get:</p>
@@ -31,6 +31,7 @@ Tags
 <li><strong>Data Integrity:</strong> SQLite maintains the accuracy and consistency of your data.</li>
 <li><strong>Querying and Reporting:</strong> Generate detailed reports for specific periods.</li>
 <li><strong>CSV Export:</strong> Easily export your time tracking data to CSV format for further analysis or sharing.</li>
+<li><strong>Pomodoro Integration:</strong> The <code>pomodoro</code> option in the <code>start</code> command enhances time tracking by integrating the Pomodoro Technique.</li>
 </ul>
 <h3 id="getting-started-with-timet">Getting Started with Timet</h3>
 <p>Timet requires Ruby version 3.0.0 or greater and sqlite3 version 1.7 or above to function properly. There are alternative installations for older Ruby and Sqlite versions as well.</p>
@@ -43,15 +44,15 @@ Tags
 <ul>
 <li>
 <p><strong>Start Tracking Time:</strong></p>
-<p>Use the <code>timet start</code> command to begin tracking time for a specific task using with a note (optional).</p>
+<p>Use the <code>timet start</code> command to begin tracking time for a specific task using with a note and “pomodoro time” in minutes (optional).</p>
 <p>For instance, to start tracking time for a task named “task1”, you would run:</p>
 </li>
 </ul>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span><span style="color:#79B8FF"> --notes=</span><span style="color:#9ECBFF">'My notes'</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span><span style="color:#79B8FF"> --notes=</span><span style="color:#9ECBFF">"My notes"</span><span style="color:#79B8FF"> --pomodoro=25</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#B392F0">or</span><span style="color:#E1E4E8"> </span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span><span style="color:#9ECBFF"> 'My notes'</span></span>
+<span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> start</span><span style="color:#9ECBFF"> task1</span><span style="color:#9ECBFF"> "My notes"</span><span style="color:#79B8FF"> 25</span></span>
 <span class="line"></span></code></pre>
 <ul>
 <li>
