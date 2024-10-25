@@ -22,6 +22,7 @@ Tags
 <p>Utilizing SQLite for local data storage, Timet ensures that your time tracking data is stored securely on your device. This approach eliminates the need for external databases or cloud storage, offering a fast, lightweight, and privacy-focused solution. Whether you’re curious about how you allocate your time or need a reliable tool for managing your work hours, Timet provides a straightforward and effective way to keep track of your activities.</p>
 <h3 id="why-timet">Why Timet?</h3>
 <p><strong>Timet</strong> is designed to track the time you spend on various tasks locally, without relying on external databases or cloud storage. It uses <strong>SQLite</strong> to store the time tracking data, ensuring that your data remains secure and private. With Timet, you get:</p>
+<p><img src="/images/timet1.gif" alt="Timet" title="Timet"></p>
 <p><strong>Key Features:</strong></p>
 <ul>
 <li><strong>Local Data Storage:</strong> Timet utilizes SQLite to store your time tracking data locally, ensuring privacy and security.</li>
@@ -136,7 +137,7 @@ To modify the details of a previously recorded task, use the <code>timet edit [i
 <p>The summary command has the option to export your time data to a CSV file by specifying the —csv flag. For example:</p>
 </li>
 </ul>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> su</span><span style="color:#9ECBFF"> t</span><span style="color:#79B8FF"> --csv=file.csv</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">timet</span><span style="color:#9ECBFF"> su</span><span style="color:#9ECBFF"> t</span><span style="color:#79B8FF"> --csv=summary_today.csv</span></span>
 <span class="line"></span></code></pre>
 <p>This will create a CSV file (summary_today.csv) containing all tracked tasks for the current day, making it easy to share or import into other tools. You can use this flag with any of the summary filters (t, y, w, m).</p>
 <p>When exporting to CSV, timestamps for start and end times are converted to a readable date format (YYYY-MM-DD HH:MM:SS), ensuring compatibility with software like Excel or LibreOffice.</p>
