@@ -35,6 +35,7 @@ Tags
 <li><strong>Pomodoro Integration:</strong> The pomodoro option in the start command enhances time tracking by integrating the Pomodoro Technique.</li>
 <li><strong>Block Time Plot:</strong> Visualizes the distribution of tracked time across a 24-hour period, with bars in each column representing the amount of time tracked during that specific hour.</li>
 <li><strong>Tag Distribution Plot:</strong> Illustrates the proportion of total tracked time allocated to each tag, showing the relative contribution of each tag to the overall time tracked.</li>
+<li><strong>Detailed Statistics:</strong> Displays detailed statistics for each tag, including total duration, average duration, and standard deviation.</li>
 </ul>
 <h3 id="getting-started-with-timet">Getting Started with Timet</h3>
 <p>Timet requires Ruby version 3.0.0 or greater and sqlite3 version 1.7 or above to function properly. There are alternative installations for older Ruby and Sqlite versions as well.</p>
@@ -115,7 +116,7 @@ To modify the details of a previously recorded task, use the <code>timet edit [i
 
 
 
-<table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><strong>timet su t</strong></td><td>Get a report of tracked time for the current day.</td></tr><tr><td><strong>timet su y</strong></td><td>View a report of tracked time for yesterday.</td></tr><tr><td><strong>timet su w</strong></td><td>See a report of tracked time for the entire week.</td></tr><tr><td><strong>timet su r</strong></td><td>Resume tracking the last task you were working on.</td></tr><tr><td><strong>timet su m</strong></td><td>View a report for the previous month.</td></tr><tr><td><strong>timet su [date]</strong></td><td>Display a report of tracked time for a specific date.</td></tr><tr><td><strong>timet su [start_date]..[end_date]</strong></td><td>Display a report of tracked time for a date range.</td></tr></tbody></table>
+<table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><strong>timet su t</strong></td><td>Get a report of tracked time for the current day.</td></tr><tr><td><strong>timet su y</strong></td><td>View a report of tracked time for yesterday.</td></tr><tr><td><strong>timet su w</strong></td><td>See a report of tracked time for the entire week.</td></tr><tr><td><strong>timet su r [id]</strong></td><td>Resume tracking the last task you were working on.</td></tr><tr><td><strong>timet su m</strong></td><td>View a report for the previous month.</td></tr><tr><td><strong>timet su [date]</strong></td><td>Display a report of tracked time for a specific date.</td></tr><tr><td><strong>timet su [start_date]..[end_date]</strong></td><td>Display a report of tracked time for a date range.</td></tr></tbody></table>
 </li>
 </ul>
 <h3 id="date-range-in-summary">Date Range in Summary</h3>
