@@ -16,7 +16,7 @@ Tags
   prose-a:text-blue-600 prose-img:rounded-xl
   prose-headings:underline max-w-none md:w-5/6 dark:bg-slate-800"> <p><img src="/images/timet.webp" alt="Timet" title="Timet"></p>
 <h2 id="timet-a-powerful-command-line-tool-for-tracking-your-time">Timet: A Powerful Command Line Tool for Tracking Your Time</h2>
-<p><em>Updated on: 2024-10-11</em></p>
+<p><em>Updated on: 2024-12-11</em></p>
 <p><a href="https://github.com/frankvielma/timet"><img src="https://badge.fury.io/rb/timet.svg" alt="Gem Version"></a></p>
 <p><a href="https://github.com/frankvielma/timet/">Timet</a> is a Ruby-based command-line time tracking tool designed to help you effortlessly track your work hours and monitor your productivity directly from your terminal. With Timet, you can log the time spent on various tasks and projects using simple text commands, making it ideal for users who prefer a lightweight and efficient solution without the need for a graphical interface.</p>
 <p>Utilizing SQLite for local data storage, Timet ensures that your time tracking data is stored securely on your device. This approach eliminates the need for external databases or cloud storage, offering a fast, lightweight, and privacy-focused solution. Whether you’re curious about how you allocate your time or need a reliable tool for managing your work hours, Timet provides a straightforward and effective way to keep track of your activities.</p>
@@ -37,6 +37,7 @@ Tags
 <li><strong>Tag Distribution Plot:</strong> Illustrates the proportion of total tracked time allocated to each tag, showing the relative contribution of each tag to the overall time tracked.</li>
 <li><strong>Detailed Statistics:</strong> Displays detailed statistics for each tag, including total duration, average duration, and standard deviation.</li>
 <li><strong>iCalendar Export:</strong> Easily export your time tracking data to iCalendar format for integration with calendar applications.</li>
+<li><strong>S3 Cloud Backup:</strong> Seamlessly backup and sync your time tracking data with S3-compatible storage services, providing an additional layer of data protection and accessibility.</li>
 </ul>
 <h3 id="getting-started-with-timet">Getting Started with Timet</h3>
 <p>Timet requires Ruby version 3.0.0 or greater and sqlite3 version 1.7 or above to function properly. There are alternative installations for older Ruby and Sqlite versions as well.</p>
@@ -117,7 +118,11 @@ To modify the details of a previously recorded task, use the <code>timet edit [i
 
 
 
-<table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><strong>timet su t</strong></td><td>Get a report of tracked time for the current day.</td></tr><tr><td><strong>timet su y</strong></td><td>View a report of tracked time for yesterday.</td></tr><tr><td><strong>timet su w</strong></td><td>See a report of tracked time for the entire week.</td></tr><tr><td><strong>timet su r [id]</strong></td><td>Resume tracking the last task you were working on.</td></tr><tr><td><strong>timet su m</strong></td><td>View a report for the previous month.</td></tr><tr><td><strong>timet su [date]</strong></td><td>Display a report of tracked time for a specific date.</td></tr><tr><td><strong>timet su [start_date]..[end_date]</strong></td><td>Display a report of tracked time for a date range.</td></tr></tbody></table>
+
+
+
+
+<table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td><strong>timet su t</strong></td><td>Get a report of tracked time for the current day.</td></tr><tr><td><strong>timet su y</strong></td><td>View a report of tracked time for yesterday.</td></tr><tr><td><strong>timet su w</strong></td><td>See a report of tracked time for the entire week.</td></tr><tr><td><strong>timet su r [id]</strong></td><td>Resume tracking the last task you were working on.</td></tr><tr><td><strong>timet su m</strong></td><td>View a report for the previous month.</td></tr><tr><td><strong>timet su [date]</strong></td><td>Display a report of tracked time for a specific date.</td></tr><tr><td><strong>timet su [start_date]..[end_date]</strong></td><td>Display a report of tracked time for a date range.</td></tr><tr><td><strong>timet sync</strong></td><td>Sync local db with remote (S3) external db</td></tr></tbody></table>
 </li>
 </ul>
 <h3 id="date-range-in-summary">Date Range in Summary</h3>
@@ -167,7 +172,15 @@ To modify the details of a previously recorded task, use the <code>timet edit [i
   <path fill="currentColor"
     d="M12 12h5v5h-5zm7-9h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 2v2H5V5zM5 19V9h14v10z">
   </path>
-</svg> <time>Aug 9, 2024</time> </div> </div> </div> </a> </article> <div class="mt-6"> <span class="font-bold dark:text-white mb-2">Tags</span> <div class="flex flex-wrap gap-2 mt-2"> <div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/ruby">ruby</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/ruby on rails">ruby on rails</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/hotwire">hotwire</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/view component">view component</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/timet">timet</a> </div> </div></div> </div> </div> <div class="flex flex-col text-center gap-2 pt-10 pb-2 text-neutral-800 bg-neutral-100 dark:bg-slate-800 dark:text-neutral-100"> <div class="flex gap-4 p-2"> <div class="w-32"> <img src="/_astro/license.DIFbfDz6_Z19AURj.webp" alt="Profile" loading="lazy" width="200" height="70" decoding="async"> </div> <div class="text-sm text-left">
+</svg> <time>Aug 9, 2024</time> </div> </div> </div> </a> </article> <div class="mt-6"> <span class="font-bold dark:text-white mb-2">Tags</span> <div class="flex flex-wrap gap-2 mt-2"> <div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/ruby">ruby</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/ruby on rails">ruby on rails</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/hotwire">hotwire</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/view component">view component</a> </div><div class="flex bg-gray-200 rounded-xl px-3 py-2 hover:bg-gray-300 hover:underline dark:text-white dark:bg-black dark:hover:bg-slate-700"> <a href="/tags/timet">timet</a> </div> </div> <div class="flex mt-4"> <script type="text/javascript">
+	atOptions = {
+		'key' : 'f12ab42924a2b6886342c375d3a7abf8',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script> <script type="text/javascript" src="//www.highperformanceformat.com/f12ab42924a2b6886342c375d3a7abf8/invoke.js"></script> </div></div> </div> </div> <div class="flex flex-col text-center gap-2 pt-10 pb-2 text-neutral-800 bg-neutral-100 dark:bg-slate-800 dark:text-neutral-100"> <div class="flex gap-4 p-2"> <div class="w-32"> <img src="/_astro/license.DIFbfDz6_Z19AURj.webp" alt="Profile" loading="lazy" width="200" height="70" decoding="async"> </div> <div class="text-sm text-left">
 This work by Frank Vielma is licensed under a Creative Commons
       Attribution-NonCommercial 4.0 License.
 </div> </div> <div class="text-neutral-800 dark:text-neutral-100">© 2024 Frank Vielma</div> </div> <!--TwSizeIndicator /--> </div> </main> </body></html>
